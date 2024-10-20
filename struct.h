@@ -6,21 +6,32 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <time.h>
+#include <SDL_mixer.h>
 
-struct s_snake {
+typedef struct poserpent {
     int x, y, w, h;
-    struct s_snake *next;
-};
+    struct poserpent* next;
+} poserpent;
 
-typedef struct s_snake poserpent;
+typedef struct food {
+    int x, y, w, h;
+} food;
 
 struct s_mur {
     int x, y, w, h;
 };
 typedef struct s_mur mur;
 
-typedef struct s_food {
+struct s_malus {
     int x, y, w, h;
-} food;
+};
+typedef struct s_malus malus;
 
-#endif //MAIN_H
+struct s_bonus {
+    int x, y, w, h;
+};
+typedef struct s_bonus bonus;
+
+void jouerSon(Mix_Chunk* son);
+
+#endif
