@@ -1,0 +1,1 @@
+Bonjour, Ce projet a été creer par Para Nathan et Maxime Gréjon, nous avons le meme code cependant pour la condition final nous avons decider de faire une version de notre coter (la mienne est celle avec les bonus/malus et celle de maxime avec les sons) et de faire une version final qui reunit nos 2 versions.
